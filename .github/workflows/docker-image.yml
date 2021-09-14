@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Build and run
     - uses: docker/build-push-action@v2
     
       
