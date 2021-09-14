@@ -20,4 +20,6 @@ jobs:
     - name: Run the Docker image
       run: docker run -p 83:80 ang-example
       
+    - name:  Docker login
+      run: docker login       
   
