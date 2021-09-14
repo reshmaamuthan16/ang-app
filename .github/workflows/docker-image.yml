@@ -13,8 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker/build-run-action@v2
-    - uses: docker/build-push-action@v2
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build -t ang-example .
+    - name: Run the Docker image
+      run: docker run -p 83:80 ang-example 
+
 
 
       
